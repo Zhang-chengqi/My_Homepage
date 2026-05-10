@@ -4,9 +4,9 @@ layout: default
 <article class="post">
     <header class="post-header">
         <p class="post-meta">
-            <a href="/My_Homepage/">&larr; 返回首页</a>
+            <a href="{{ site.baseurl }}/">&larr; 返回首页</a>
             <span class="separator">|</span>
-            <a href="/My_Homepage/blog.html">博客列表</a>
+            <a href="{{ site.baseurl }}/blog.html">博客列表</a>
         </p>
         <h1 class="post-title">{{ page.title }}</h1>
         <p class="post-date">发布于 {{ page.date | date: "%Y-%m-%d" }}</p>
