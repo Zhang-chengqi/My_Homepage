@@ -4,7 +4,7 @@ author: 张诚琪
 email: zcq003715@mail.ustc.edu.cn
 
 url: "https://zhang-chengqi.github.io"
-baseurl: ""
+baseurl: "/My_Homepage"
 
 permalink: /posts/:title.html
 
@@ -18,12 +18,12 @@ exclude:
 
 navigation:
   - title: Blog
-    url: /blog.html
+    url: /My_Homepage/blog.html
   - title: Writing
-    url: /#writing
+    url: /My_Homepage/#writing
   - title: Publications
-    url: /#publications
+    url: /My_Homepage/#publications
   - title: Projects
-    url: /#projects
+    url: /My_Homepage/#projects
   - title: Contact
-    url: /#contact
+    url: /My_Homepage/#contact
