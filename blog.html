@@ -1,0 +1,29 @@
+---
+layout: default
+title: 博客 | 张诚琪
+---
+
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">博客</h1>
+        <p class="post-date">记录学习与思考</p>
+    </header>
+
+    <div class="post-content">
+        <ul class="post-list">
+            {% for post in site.posts %}
+            <li>
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <p class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</p>
+                {% if post.description %}
+                <p class="post-excerpt">{{ post.description }}</p>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        
+        {% if site.posts.size == 0 %}
+        <p style="color: #666; font-style: italic;">暂无博客文章，敬请期待...</p>
+        {% endif %}
+    </div>
+</article>

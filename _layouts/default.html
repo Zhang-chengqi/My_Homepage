@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body id="top">
+    <header class="site-header">
+        <nav class="site-nav">
+            <div class="nav-links">
+                {% for item in site.navigation %}
+                <a href="{{ item.url }}">{{ item.title }}</a>
+                {% endfor %}
+            </div>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 张诚琪. All rights reserved.</p>
+    </footer>
+</body>
+</html>

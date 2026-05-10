@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="post">
+    <header class="post-header">
+        <p class="post-meta">
+            <a href="/">&larr; 返回首页</a>
+            <span class="separator">|</span>
+            <a href="/blog.html">博客列表</a>
+        </p>
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-date">发布于 {{ page.date | date: "%Y-%m-%d" }}</p>
+    </header>
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+</article>

@@ -1,0 +1,66 @@
+---
+layout: default
+title: 张诚琪 | 个人主页
+---
+
+<div class="hero">
+    <h1>张诚琪</h1>
+    <p class="subtitle">中国科学技术大学 本科在读</p>
+    
+    <div class="about-section">
+        <h3>About</h3>
+        <p>
+            我是中国科学技术大学数学科学学院计算数学专业本科在读学生。目前正参与大研项目，研究方向为<strong>优化方向</strong>。我对机器学习、数值计算等领域有浓厚兴趣，期待在相关方向深入学习与研究。
+        </p>
+    </div>
+
+    <div class="about-section">
+        <h3>Research Interests</h3>
+        <ul>
+            <li>优化理论与算法</li>
+            <li>机器学习</li>
+            <li>数值计算</li>
+        </ul>
+    </div>
+</div>
+
+<section id="writing" class="section home-section">
+    <div class="section-header">
+        <h2 class="section-title">Writing</h2>
+        <a href="/blog.html" class="view-all">查看全部 &rarr;</a>
+    </div>
+    
+    <ul class="post-list">
+        {% for post in site.posts limit:2 %}
+        <li>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</p>
+            {% if post.description %}
+            <p class="post-excerpt">{{ post.description }}</p>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    
+    {% if site.posts.size == 0 %}
+    <p style="color: #666; font-style: italic;">暂无博客文章</p>
+    {% endif %}
+</section>
+
+<section id="publications" class="section">
+    <h2 class="section-title">Publications</h2>
+    <p style="color: #666; font-style: italic;">论文展示区域（待补充）</p>
+</section>
+
+<section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <p style="color: #666; font-style: italic;">项目展示区域（待补充）</p>
+</section>
+
+<section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <ul class="contact-list">
+        <li>Email: <a href="mailto:zcq003715@mail.ustc.edu.cn">zcq003715@mail.ustc.edu.cn</a></li>
+        <li>GitHub: <a href="https://github.com/Zhang-chengqi" target="_blank">Zhang-chengqi</a></li>
+    </ul>
+</section>
