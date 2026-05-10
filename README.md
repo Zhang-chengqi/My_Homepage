@@ -10,7 +10,7 @@
    bundle exec jekyll serve
    ```
 
-2. 访问 http://localhost:4000 预览
+2. 访问 https://zhang-chengqi.github.io/My_Homepage/ 预览
 
 ## 目录结构
 
